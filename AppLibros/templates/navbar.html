@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand {% if request.path == '/' %}active{% endif %}" href="{% url 'inicio' %}">Inicio</a>
+        <a class="navbar-brand {% if request.path == '/libros/' %}active{% endif %}" href="{% url 'libros' %}">Libros</a>
+        <a class="navbar-brand {% if request.path == '/destacados/' %}active{% endif %}" href="{% url 'destacados' %}">Destacados</a>
+        <a class="navbar-brand {% if request.path == '/reseñas/' %}active{% endif %}" href="{% url 'reseñas' %}">Reseñas</a>
+        <a class="btn btn-primary" href="{% url 'iniciar_sesion' %}">Iniciar sesión</a>
+    </div>
+</nav>
